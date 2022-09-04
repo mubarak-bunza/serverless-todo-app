@@ -17,7 +17,7 @@ export class ToDosAccess {
         private readonly todoTable = process.env.TODOS_TABLE) {
     }
 
-    async getTodosForUser(userId: string): Promise<TodoItem[]> {
+    async getTodos(userId: string): Promise<TodoItem[]> {
         logger.info("Getting todos for user");
 
         const params = {
